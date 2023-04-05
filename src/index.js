@@ -84,15 +84,15 @@ form.addEventListener("submit", (e)=>{
     let search = searchMeal.meals[0]
 
       // Check If Searched Meal Is Found Or Not
-      // if(search){
-      //   search.forEach(element => {
-      //     createMealInfoDiv(element, input);
-      //     });
-      // }
-      // else{
+      if(search){
+        search.forEach(element => {
+          createMealInfoDiv(element, input);
+          });
+      }
+      else{
           
-      //     document.body.innerHTML = `<p>No meal found for ${input}!</p>`;
-      // }
+          document.body.innerHTML = `<p>No meal found for ${input}!</p>`;
+      }
       // function button(btn){
       //   btn.remove()
       // }
