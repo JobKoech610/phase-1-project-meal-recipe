@@ -2,6 +2,52 @@
     margin-left: -40px;
 }
 
-body{
+
+
+body {
     margin: 0;
+   background-color: black;
+   color: white;
+  }
+
+#heading{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#search{
+    position: relative;
+    left: 600px;
+    border-radius: 10px;
+   
+}
+
+.btn{
+    position: relative;
+    left: 600px;
+    border-radius: 20px;  
+}
+
+hr{
+    width: 200px;
+    position: relative;
+    left: 600px;
+}
+
+.about{
+    display: flex;
+    gap: 50px;
+}
+
+p{
+    display: inline;
+}
+
+.recipe-Instructions-image{
+    display: flex;
+    gap: 20px;
+}
+
+.ingredients-measure{
+    
 }

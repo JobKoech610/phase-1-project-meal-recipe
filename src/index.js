@@ -1,14 +1,4 @@
 
-
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     fetch("https://api.openbrewerydb.org/v1/breweries")
-//     .then(resp => resp.json())
-//     .then(data =>{
-       
-//         console.log(data)
-//     })
-// });
 document.addEventListener("DOMContentLoaded", function() {
 fetch('https://www.themealdb.com/api/json/v1/1/random.php')
   .then(response => response.json())
@@ -33,6 +23,7 @@ let ingredient3 = document.querySelector('#strIngredient3')
 let ingredient4 = document.querySelector('#strIngredient4')
 let ingredient5 = document.querySelector('#strIngredient5')
 let ingredient6 = document.querySelector('#strIngredient6')
+console.log(ingredient6);
 let measure1 = document.querySelector('#strMeasure1')//measure button
 let measure2 = document.querySelector('#strMeasure2')
 let measure3 = document.querySelector('#strMeasure3')
@@ -64,6 +55,7 @@ ingredient3.textContent = meal.strIngredient3
 ingredient4.textContent = meal.strIngredient4
 ingredient5.textContent = meal.strIngredient5
 ingredient6.textContent = meal.strIngredient6
+
  measure1.textContent = meal.strMeasure1
  measure2.textContent = meal.strMeasure2
  measure3.textContent = meal.strMeasure3
