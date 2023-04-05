@@ -1,4 +1,4 @@
-
+//eventListener
 document.addEventListener("DOMContentLoaded", function() {
 fetch('https://www.themealdb.com/api/json/v1/1/random.php')
   .then(response => response.json())
@@ -8,6 +8,16 @@ fetch('https://www.themealdb.com/api/json/v1/1/random.php')
 let meal = data.meals[0];
 //select nodes
 
+let btn = document.createElement('button')
+btn.addEventListener('click', ()=>{
+  let instructions= document.querySelector('#strInstructions')
+  instructions.textContent = meal.strInstructions
+})
+document.querySelector('#button').appendChild(btn)
+btn.textContent = "click for recipe";
+btn.style.height = "30px";
+
+
 
 let name = document.querySelector('#strMeal')
 let category = document.querySelector('#strCategory')
@@ -16,7 +26,8 @@ let location = document.querySelector('#strArea')
 let mealThumb = document.querySelector('#strMealThumb')
 
 let tags = document.querySelector('#strTags')
-let youtube = document.querySelector('#strYoutube')
+
+// let youtube = document.querySelector('#strYoutube')
 let ingredient1 = document.querySelector('#strIngredient1')//ingredient button
 let ingredient2 = document.querySelector('#strIngredient2')
 let ingredient3 = document.querySelector('#strIngredient3')
@@ -30,15 +41,9 @@ let measure3 = document.querySelector('#strMeasure3')
 let measure4 = document.querySelector('#strMeasure4')
 let measure5 = document.querySelector('#strMeasure5')
 let measure6 = document.querySelector('#strMeasure6')
-let source = document.querySelector('#strSource')
+// let source = document.querySelector('#strSource')
 
-let btn = document.createElement('button')
-btn.textContent='recipe';
-btn.addEventListener('click', ()=>{
-  let instructions= document.querySelector('#strInstructions')// recipe button
-  instructions.textContent = meal.strInstructions
-})
-document.getElementById('random').appendChild(btn)
+
 
 //inserting data
 name.textContent = meal.strMeal
@@ -48,7 +53,7 @@ location.textContent = meal.strArea
 mealThumb .src = meal.strMealThumb
 tags.textContent = meal.strTags
 // .textContent = meal.strMeal
- youtube.href = meal.strYoutube
+//  youtube.href = meal.strYoutube
 ingredient1.textContent = meal.strIngredient1
 ingredient2.textContent = meal.strIngredient2
 ingredient3.textContent = meal.strIngredient3
@@ -62,13 +67,14 @@ ingredient6.textContent = meal.strIngredient6
  measure4.textContent = meal.strMeasure4
  measure5.textContent = meal.strMeasure5
  measure6.textContent = meal.strMeasure6
- source.href = meal.strSource
+//  source.href = meal.strSource
 
   })
-
+  
   const form = document.querySelector("#form")
 form.addEventListener("submit", (e)=>{
     e.preventDefault()
+    
   const searchArea = document.querySelector('#search').value
   const input = searchArea .split(' ').join('');
   fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`)
@@ -87,8 +93,11 @@ form.addEventListener("submit", (e)=>{
           
       //     document.body.innerHTML = `<p>No meal found for ${input}!</p>`;
       // }
-  
-
+      // function button(btn){
+      //   btn.remove()
+      // }
+      // button(btn)
+     
 let name = document.querySelector('#strMeal')
 let category = document.querySelector('#strCategory')
 let location = document.querySelector('#strArea')
@@ -123,7 +132,7 @@ mealThumb .src = search.strMealThumb
 instructions.textContent = search.strInstructions
 tags.textContent = search.strTags
 // .textContent = meal.strMeal
- youtube.href = search.strYoutube
+//  youtube.href = search.strYoutube
 ingredient1.textContent = search.strIngredient1
 ingredient2.textContent = search.strIngredient2
 ingredient3.textContent = search.strIngredient3

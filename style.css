@@ -50,4 +50,6 @@ p{
 
 .ingredients-measure{
     display: flex;
+    gap: 30rem;
+    text-align: center;
 }
