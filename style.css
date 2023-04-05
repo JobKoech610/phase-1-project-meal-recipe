@@ -1,19 +1,28 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+
 .ms-n5 {
     margin-left: -40px;
 }
 
-
+#heading{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 15px;
+}
 
 body {
     margin: 0;
    background-color: black;
    color: white;
+   font-family: 'Inconsolata', monospace;
   }
 
-#heading{
-    text-align: center;
-    text-transform: capitalize;
-}
 
 #search{
     position: relative;
@@ -31,7 +40,7 @@ body {
 hr{
     width: 200px;
     position: relative;
-    left: 600px;
+    left: 525px;
 }
 
 .about{
