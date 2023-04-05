@@ -96,7 +96,7 @@ form.addEventListener("submit", (e)=>{
       //   btn.remove()
       // }
       // button(btn)
-      document.querySelector('#button').remove()
+     
 let name = document.querySelector('#strMeal')
 let category = document.querySelector('#strCategory')
 let location = document.querySelector('#strArea')
@@ -144,10 +144,10 @@ ingredient6.textContent = search.strIngredient6
  measure4.textContent = search.strMeasure4
  measure5.textContent = search.strMeasure5
  measure6.textContent = search.strMeasure6
- source.href = search.strSource
+//  source.href = search.strSource
 
 
-form.reset()
+document.querySelector('#button').remove()
   })
 })
 });
