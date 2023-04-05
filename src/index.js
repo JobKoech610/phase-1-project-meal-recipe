@@ -12,6 +12,9 @@ let btn = document.createElement('button')
 btn.addEventListener('click', ()=>{
   let instructions= document.querySelector('#strInstructions')
   instructions.textContent = meal.strInstructions
+  instructions.addEventListener('onmouseover', ()=>{
+
+  })
 })
 document.querySelector('#button').appendChild(btn)
 btn.textContent = "click for recipe";
@@ -84,20 +87,20 @@ form.addEventListener("submit", (e)=>{
     let search = searchMeal.meals[0]
 
       // Check If Searched Meal Is Found Or Not
-      if(search){
-        search.forEach(element => {
-          createMealInfoDiv(element, input);
-          });
-      }
-      else{
+      // if(search){
+      //   search.forEach(element => {
+      //     createMealInfoDiv(element, input);
+      //     });
+      // }
+      // else{
           
-          document.body.innerHTML = `<p>No meal found for ${input}!</p>`;
-      }
+      //     document.body.innerHTML = `<p>No meal found for ${input}!</p>`;
+     // }
       // function button(btn){
       //   btn.remove()
       // }
       // button(btn)
-     
+      document.querySelector('#button').remove()
 let name = document.querySelector('#strMeal')
 let category = document.querySelector('#strCategory')
 let location = document.querySelector('#strArea')
@@ -148,7 +151,7 @@ ingredient6.textContent = search.strIngredient6
  source.href = search.strSource
 
 
-
+form.reset()
   })
 })
 });
