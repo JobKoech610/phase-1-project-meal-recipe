@@ -12,9 +12,7 @@ let btn = document.createElement('button')
 btn.addEventListener('click', ()=>{
   let instructions= document.querySelector('#strInstructions')
   instructions.textContent = meal.strInstructions
-  instructions.addEventListener('onmouseover', ()=>{
-
-  })
+ 
 })
 document.querySelector('#button').appendChild(btn)
 btn.textContent = "click for recipe";
