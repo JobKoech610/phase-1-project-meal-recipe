@@ -1,8 +1,9 @@
 
 
   @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
   
-  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+ 
 
 
 .ms-n5 {
@@ -14,14 +15,17 @@
     text-transform: capitalize;
     font-family: 'Pacifico', cursive;
     margin-bottom: 15px;
-    
+
 }
 
 body {
     margin: 0;
-   background-color: black;
+   /* background-color: black; */
    color: white;
    font-family: 'Inconsolata', monospace;
+   background-image: url("image.jpg");
+   background-size: cover;
+
   }
 
 
