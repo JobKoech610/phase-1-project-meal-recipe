@@ -12,13 +12,11 @@ let btn = document.createElement('button')
 btn.addEventListener('click', ()=>{
   let instructions= document.querySelector('#strInstructions')
   instructions.textContent = meal.strInstructions
- 
 })
+btn.style.borderRadius = "25px";
 document.querySelector('#button').appendChild(btn)
 btn.textContent = "click for recipe";
 btn.style.height = "30px";
-
-
 
 let name = document.querySelector('#strMeal')
 let category = document.querySelector('#strCategory')
