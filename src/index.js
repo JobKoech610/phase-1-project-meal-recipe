@@ -12,6 +12,7 @@ let btn = document.createElement('button')
 btn.addEventListener('click', ()=>{
   let instructions= document.querySelector('#strInstructions')
   instructions.textContent = meal.strInstructions
+  // instructions.style.backgroundColor='black'
 })
 btn.style.borderRadius = "25px";
 document.querySelector('#button').appendChild(btn)
@@ -82,6 +83,14 @@ form.addEventListener("submit", (e)=>{
     console.log(searchMeal.meals[0])
     let search = searchMeal.meals[0]
 
+    // if (search) {
+    //   search.forEach(element => { 
+    //     console.log(element)
+    //   })
+    // } else {
+    //    "absent";
+    // }
+
       // Check If Searched Meal Is Found Or Not
       // if(search){
       //   search.forEach(element => {
@@ -150,6 +159,8 @@ ingredient6.textContent = search.strIngredient6
 document.querySelector('#button').remove()
   })
 })
+
+
 });
 
 

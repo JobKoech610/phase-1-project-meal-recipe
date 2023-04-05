@@ -14,16 +14,8 @@
   </head>
   <body>
 
-    <h1 id="heading" onmouseover="mouseOver()" onmouseout="mouseOut()">Meal recipe</h1>
-    <script>
-      function mouseOver() {
-            document.getElementById("heading").style.color = "red";
-          }
-          // mouseOver()
-          function mouseOut() {
-            document.getElementById("heading").style.color = "white";
-          }
-    </script>
+    <h1 id="heading" onmouseover="mouseOver()" onmouseout="mouseOut()"><u>Meal recipe</u></h1>
+   
 
     <div class="form">
       <form id='form'>
@@ -60,7 +52,7 @@
   
             <hr>
   
-            <h4 id="recipe">Recipe</h4>
+            <h4 id="recipe" onmouseover="mouseOn()" onmouseout="mouseOff()"><u>Recipe</u></h4>
             
             <div class="recipe-Instructions-image"> 
               
@@ -83,7 +75,7 @@
             <div class="ingredients-measure">
             <div id="ingredient">
                 
-                    <h4>ingredients</h4>
+                    <h4 id="igred" onmouseover="mouseEventOne()" onmouseout="mouseEventTwo()"><u>Ingredients</u></h4>
                 <p id="strIngredient1"></p><br >
                 <p id="strIngredient2"></p><br >
                 <p id="strIngredient3"></p><br >
@@ -93,7 +85,7 @@
                 
             </div>
             <div id="measure">
-                <h4>measure</h4>
+                <h4 id="measures"onmouseover="mouseIn()" onmouseout="mouseOutt()"><u>Measure</u></h4>
                 
                     <p id="strMeasure1"></p><br >
                     <p id="strMeasure2"></p><br >
@@ -121,7 +113,40 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
     <script src="src/index.js"></script>
+    <script>
+          function mouseOver() {
+            document.getElementById("heading").style.color = "red";
+          }
+          // mouseOver()
+          function mouseOut() {
+            document.getElementById("heading").style.color = "black";
+          }
 
+          function mouseEventOne() {
+            document.getElementById("igred").style.color = "red";
+          }
+          // mouseOver()
+          function mouseEventTwo() {
+            document.getElementById("igred").style.color = "white";
+          }
+
+          function mouseIn() {
+            document.getElementById("measures").style.color = "red";
+          }
+          // mouseOver()
+          function mouseOutt() {
+            document.getElementById("measures").style.color = "white";
+          }
+
+          function mouseOn() {
+            document.getElementById("recipe").style.color = "red";
+          }
+          // mouseOver()
+          function mouseOff() {
+            document.getElementById("recipe").style.color = "white";
+          }
+
+    </script>
     
   </body>
 </html>
