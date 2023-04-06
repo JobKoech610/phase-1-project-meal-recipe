@@ -1,11 +1,15 @@
-# -Fruityvice
+# -MealRecipe
 
 ### api URL
- GET  all fruits  
- api/fruit/all
+ GET random meal recipe 
+https://www.themealdb.com/api/json/v1/1/random.php
 
- GET a specific fruit
- /api/fruit/{name} 
+ GET a specific meal recipe
+ https://www.themealdb.com/api/json/v1/1/search.php?s={name} 
 
- PUT new fruit
-api/fruit
+#### coding languages used
+html 
+css 
+javascript
+json
+

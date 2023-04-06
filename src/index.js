@@ -99,12 +99,9 @@ form.addEventListener("submit", (e)=>{
       // }
       // else{
           
-      //     document.body.innerHTML = `<p>No meal found for ${input}!</p>`;
+      //     document.body.innerHTML = `<span>No meal found for ${input}!</span>`;
      // }
-      // function button(btn){
-      //   btn.remove()
-      // }
-      // button(btn)
+      
      
 let name = document.querySelector('#strMeal')
 let category = document.querySelector('#strCategory')
