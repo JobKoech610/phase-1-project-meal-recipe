@@ -94,7 +94,7 @@ form.addEventListener("submit", (e)=>{
       // Check If Searched Meal Is Found Or Not
       // if(search){
       //   search.forEach(element => {
-      //     createMealInfoDiv(element, input);
+      //     createMealI(element, input);
       //     });
       // }
       // else{
