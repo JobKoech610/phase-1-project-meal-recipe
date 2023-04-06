@@ -152,7 +152,7 @@ ingredient6.textContent = search.strIngredient6
  measure6.textContent = search.strMeasure6
 //  source.href = search.strSource
 
-
+form.reset();
 document.querySelector('#button').remove()
   })
 })
