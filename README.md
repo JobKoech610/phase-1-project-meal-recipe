@@ -25,3 +25,6 @@ and open the index.html file in the browser.
 
 #### link 
 https://jobkoech610.github.io/phase-1-project-meal-recipe/
+
+#### license
+
