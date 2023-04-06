@@ -14,7 +14,7 @@ javascript
 json
 
 #### about
-this projects uses an mealrecipe API to enable a user to see the recipe of a meal 
+this projects uses an mealrecipe API to enable a user to see the recipe of a meal (readload page to get random meal recipe)
 A user can search a specific meal by searching the specific meal name on the search-bar.
 
 #### setup 
